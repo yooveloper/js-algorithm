@@ -12,6 +12,9 @@
     2
  */
 
+let numbers = [5, 3, 7, 11, 2, 15, 17];
+
+// for 문 방식
 function solution(numbers) {
   let answer;
   let min = Number.MAX_SAFE_INTEGER;
@@ -23,6 +26,10 @@ function solution(numbers) {
   return answer;
 }
 
-let numbers = [5, 3, 7, 11, 2, 15, 17];
+// Math.min 내장함수 + spread operator 를 활용한 방식
+function solution2(numbers) {
+  let answer = Math.min(...numbers);
+  return answer;
+}
 
-console.log(solution(numbers));
+console.log(solution2(numbers));
