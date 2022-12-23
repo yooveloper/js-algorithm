@@ -40,3 +40,9 @@ function solution(numbers) {
 }
 
 console.log(solution(numbers));
+
+/**
+ * 풀이
+ * for문을 돌면서 홀수인지 탐색하고 홀수면 sum에 더해주고, 해당 홀수가 min 보다 값이 작으면 min 변수에 값을 재할당해줌
+ * 구해진 홀수의 총 합과 최솟값을 배열로 return
+ */
